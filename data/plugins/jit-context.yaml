@@ -1,0 +1,14 @@
+name: JIT Context
+repo: https://github.com/wojciechwiesner/jit-context
+tagline: Per-project memory from .planning/STATE.md and recorded facts
+description: Injects a small per-project context capsule (recorded facts plus .planning/STATE.md) into the system prompt and adds tools to save and recall verified facts. Stores everything in a local SQLite file, fails open, and keeps each project's memory separate. Supports OpenCode 1.x and 2.x.
+homepage: https://github.com/wojciechwiesner/jit-context/tree/master/integrations/opencode
+scope:
+  - global
+tags:
+  - memory
+  - context
+installation: |
+  Download `jit-context-opencode-v2.js` (OpenCode 2.x) or `jit-context-opencode-v1.js` (1.x) from the
+  [opencode-v0.2.0 release](https://github.com/wojciechwiesner/jit-context/releases/tag/opencode-v0.2.0)
+  and copy it to `~/.config/opencode/plugins/jit-context.js`.
